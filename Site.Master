@@ -1,0 +1,52 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Tienda.Site" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/normalize.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/app.css" type="text/css" />
+
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <header class="header">
+        <div class="contenido-header">
+            <div class="contenedor">
+                <div class="nav-bar">
+                    <div class="nav-image">
+                        <img class="img-logo" src="assets/img/logo.png" />
+
+                        <div class="menu-mobile">
+                            <img src="assets/img/barras.svg" />
+                        </div>
+                    </div>
+                    <nav class="navegacion">
+                        <a href="/">Inicio</a>
+                        <a href="contacto.aspx">Contacto</a>
+                        <a href="productos.aspx">Productos</a>
+                        <a href="login.aspx">Login</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="contenedor">
+        <form id="form1" runat="server" class="formulario">
+            <asp:ContentPlaceHolder ID="main" runat="server">
+            </asp:ContentPlaceHolder>
+        </form>
+    </main>
+    <footer class="footer">
+        <div class="contenedor">
+            <p>Todos los derechos reservados - &copy; Merybett Avila</p>
+        </div>
+    </footer>
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
